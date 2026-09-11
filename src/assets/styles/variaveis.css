@@ -1,0 +1,89 @@
+/* Grifo da Bel - variáveis de estilo
+   importar na primeira linha do index.css */
+
+:root {
+  /* fundos */
+  --cor-fundo: #f2eee9;
+  --cor-superficie: #f8efe5;
+  --cor-superficie-alta: #fdfaf6;
+
+  /* texto */
+  --cor-texto: #2b3440;
+  --cor-texto-suave: #5f5a57;
+
+  /* azul: o médio é fundo de botão, o escuro é cor de letra */
+  --cor-acento: #5d768b;
+  --cor-acento-hover: #41586e;
+  --cor-acento-texto: #41586e;
+
+  /* o grifo da loja */
+  --cor-grifo: #d8b6b8;
+  --cor-grifo-forte: #b48a93;
+
+  /* neutros de apoio */
+  --cor-areia: #c8b39b;
+  --cor-avela: #b9ada3;
+  --cor-samambaia: #8e9a92;
+
+  /* estados */
+  --cor-sucesso: #456052;
+  --cor-erro: #8c3340;
+  --cor-foco: #41586e;
+
+  /* bordas: a forte é obrigatória em input e botão */
+  --cor-borda: #c8b39b;
+  --cor-borda-forte: #8a7f74;
+
+  /* fontes */
+  --fonte-titulo: "Playfair Display", Georgia, serif;
+  --fonte-corpo: "Inter", system-ui, sans-serif;
+  --fonte-numero: "Roboto Mono", "Courier New", monospace;
+
+  /* tamanhos de texto */
+  --texto-xp: 0.75rem;
+  --texto-p: 0.875rem;
+  --texto-m: 1rem;
+  --texto-g: 1.25rem;
+  --texto-gg: 1.75rem;
+  --texto-xg: 2.5rem;
+
+  --peso-normal: 400;
+  --peso-medio: 500;
+  --peso-forte: 700;
+
+  --altura-linha-titulo: 1.2;
+  --altura-linha-corpo: 1.6;
+
+  /* espaçamentos */
+  --espaco-1: 0.25rem;
+  --espaco-2: 0.5rem;
+  --espaco-3: 0.75rem;
+  --espaco-4: 1rem;
+  --espaco-5: 1.5rem;
+  --espaco-6: 2rem;
+  --espaco-7: 3rem;
+  --espaco-8: 4rem;
+
+  /* cantos arredondados */
+  --raio-p: 4px;
+  --raio-m: 8px;
+  --raio-g: 12px;
+  --raio-total: 999px;
+
+  /* sombras */
+  --sombra-m: 0 2px 8px rgba(43, 52, 64, 0.08);
+  --sombra-g: 0 8px 24px rgba(43, 52, 64, 0.12);
+
+  /* layout */
+  --largura-maxima: 1120px;
+  --altura-alvo-toque: 44px;
+
+  --transicao: 180ms ease;
+}
+
+/* desliga as animações pra quem pediu isso no sistema */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transicao: 0ms;
+  }
+}

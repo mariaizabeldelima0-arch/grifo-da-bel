@@ -1,0 +1,56 @@
+{
+  "loja": "Grifo da Bel",
+  "moeda": "BRL",
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Dom Casmurro",
+      "autor": "Machado de Assis",
+      "genero": "Romance brasileiro",
+      "precoUnitario": 44.9,
+      "quantidade": 1,
+      "corCapa": "#5D768B",
+      "corTextoCapa": "#FFFFFF"
+    },
+    {
+      "id": 2,
+      "nome": "Orgulho e Preconceito",
+      "autor": "Jane Austen",
+      "genero": "Romance inglês",
+      "precoUnitario": 54.9,
+      "quantidade": 2,
+      "corCapa": "#D8B6B8",
+      "corTextoCapa": "#2B3440"
+    },
+    {
+      "id": 3,
+      "nome": "Crime e Castigo",
+      "autor": "Fiódor Dostoiévski",
+      "genero": "Romance russo",
+      "precoUnitario": 69.9,
+      "quantidade": 1,
+      "corCapa": "#8C3340",
+      "corTextoCapa": "#F8EFE5"
+    },
+    {
+      "id": 4,
+      "nome": "Drácula",
+      "autor": "Bram Stoker",
+      "genero": "Gótico",
+      "precoUnitario": 47.9,
+      "quantidade": 1,
+      "corCapa": "#4A3F45",
+      "corTextoCapa": "#F8EFE5"
+    },
+    {
+      "id": 5,
+      "nome": "O Morro dos Ventos Uivantes",
+      "autor": "Emily Brontë",
+      "genero": "Romance inglês",
+      "precoUnitario": 51.9,
+      "quantidade": 2,
+      "corCapa": "#8E9A92",
+      "corTextoCapa": "#2B3440"
+    }
+  ]
+}
