@@ -45,3 +45,18 @@ input {
   margin: 0 auto;
   padding: var(--espaco-5) var(--espaco-4);
 }
+
+.cabecalho {
+  padding: var(--espaco-5) var(--espaco-4);
+  border-bottom: 1px solid var(--cor-borda);
+  text-align: center;
+}
+
+.cabecalho .marca {
+  font-family: var(--fonte-titulo);
+  font-size: var(--texto-gg);
+  font-weight: var(--peso-forte);
+  color: var(--cor-texto);
+  text-decoration: none;
+  background: linear-gradient(transparent 60%, var(--cor-grifo) 60%);
+}
