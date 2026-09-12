@@ -11,10 +11,13 @@ export function usePagamento() {
 
     await new Promise((resolver) => setTimeout(resolver, 1500))
 
-    if (todosDigitosIguais(dados.cartao)) {
-      navegar('/falha')
+    const golpe = todosDigitosIguais(dados.cartao)
+    const finalCartao = dados.cartao.slice(-4)
+
+    if (golpe) {
+      navegar('/falha', { state: { total: dados.total, finalCartao } })
     } else {
-      navegar('/sucesso')
+      navegar('/sucesso', { state: { total: dados.total, finalCartao } })
     }
 
     setProcessando(false)
