@@ -280,3 +280,31 @@ input {
 .resultado .botao:hover {
   background-color: rgba(255, 255, 255, 0.25);
 }
+
+@media (max-width: 600px) {
+  .container {
+    padding: var(--espaco-4) var(--espaco-3);
+  }
+
+  .item {
+    flex-wrap: wrap;
+  }
+
+  .item-dados h2 {
+    font-size: var(--texto-m);
+  }
+
+    .item-subtotal {
+    width: 100%;
+    text-align: right;
+    margin-top: calc(var(--espaco-2) * -1);
+  }
+
+  .formulario {
+    max-width: 100%;
+  }
+
+  .cabecalho .marca {
+    font-size: var(--texto-g);
+  }
+}
