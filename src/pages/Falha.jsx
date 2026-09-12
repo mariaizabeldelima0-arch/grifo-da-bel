@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom'
 
 function Falha() {
   const localizacao = useLocation()
+  const total = localizacao.state?.total ?? 0
   const finalCartao = localizacao.state?.finalCartao
 
   return (
@@ -18,7 +19,7 @@ function Falha() {
         <p className="resultado-detalhe">Cartão final {finalCartao}</p>
       )}
 
-      <Link to="/pagamento" className="botao">
+      <Link to="/pagamento" state={{ total }} className="botao">
         Tentar novamente
       </Link>
     </section>
