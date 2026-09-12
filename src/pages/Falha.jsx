@@ -1,10 +1,26 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 function Falha() {
+  const localizacao = useLocation()
+  const finalCartao = localizacao.state?.finalCartao
+
   return (
-    <section>
+    <section className="resultado resultado-falha">
+      <p className="resultado-marca" aria-hidden="true">✕</p>
       <h1>tentativa de golpe</h1>
-      <Link to="/pagamento">Tentar novamente</Link>
+
+      <p className="resultado-texto">
+        Não foi possível concluir o pagamento. Confira os dados do cartão e
+        tente novamente.
+      </p>
+
+      {finalCartao && (
+        <p className="resultado-detalhe">Cartão final {finalCartao}</p>
+      )}
+
+      <Link to="/pagamento" className="botao">
+        Tentar novamente
+      </Link>
     </section>
   )
 }
