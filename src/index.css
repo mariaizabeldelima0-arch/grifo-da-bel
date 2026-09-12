@@ -164,3 +164,66 @@ input {
 .botao:hover {
   background-color: var(--cor-acento-hover);
 }
+
+.erro {
+  color: var(--cor-erro);
+  font-size: var(--texto-p);
+  font-weight: var(--peso-medio);
+}
+
+.campo input[aria-invalid='true'] {
+  border-color: var(--cor-erro);
+  border-width: 2px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-4);
+  max-width: 420px;
+  margin-top: var(--espaco-5);
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-1);
+}
+
+.campo label {
+  font-size: var(--texto-p);
+  font-weight: var(--peso-medio);
+}
+
+.campo input {
+  min-height: var(--altura-alvo-toque);
+  padding: var(--espaco-2) var(--espaco-3);
+  font-family: var(--fonte-numero);
+  background-color: var(--cor-superficie-alta);
+  color: var(--cor-texto);
+  border: 1px solid var(--cor-borda-forte);
+  border-radius: var(--raio-m);
+}
+
+.campo input[aria-invalid='true'] {
+  border-color: var(--cor-erro);
+  border-width: 2px;
+}
+
+.erro {
+  color: var(--cor-erro);
+  font-size: var(--texto-p);
+  font-weight: var(--peso-medio);
+}
+
+.formulario .botao {
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.formulario .botao:disabled {
+  background-color: var(--cor-avela);
+  color: var(--cor-texto-suave);
+  cursor: not-allowed;
+}
