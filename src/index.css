@@ -60,3 +60,107 @@ input {
   text-decoration: none;
   background: linear-gradient(transparent 60%, var(--cor-grifo) 60%);
 }
+
+.aviso {
+  padding: var(--espaco-6) 0;
+  color: var(--cor-texto-suave);
+}
+
+.lista-itens {
+  list-style: none;
+  margin: var(--espaco-5) 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-4);
+  padding: var(--espaco-4) 0;
+  border-bottom: 1px dashed var(--cor-borda);
+}
+
+.capa {
+  width: 60px;
+  min-width: 60px;
+  height: 90px;
+  border-radius: var(--raio-p);
+  padding: var(--espaco-2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.capa-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 0.55rem;
+  line-height: 1.15;
+  overflow: hidden;
+}
+
+.capa-autor {
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.item-dados {
+  flex: 1;
+}
+
+.item-dados h2 {
+  font-size: var(--texto-g);
+}
+
+.item-autor,
+.item-meta {
+  color: var(--cor-texto-suave);
+  font-size: var(--texto-p);
+}
+
+.item-subtotal {
+  font-family: var(--fonte-numero);
+  white-space: nowrap;
+}
+
+.resumo {
+  border-top: 2px solid var(--cor-borda);
+  padding-top: var(--espaco-4);
+}
+
+.resumo-itens {
+  color: var(--cor-texto-suave);
+  font-size: var(--texto-p);
+}
+
+.resumo-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--fonte-titulo);
+  font-size: var(--texto-g);
+  font-weight: var(--peso-forte);
+  margin-top: var(--espaco-2);
+}
+
+.resumo-total span {
+  font-family: var(--fonte-numero);
+  background: linear-gradient(transparent 62%, var(--cor-grifo) 62%);
+  padding: 0 var(--espaco-1);
+}
+
+.botao {
+  display: inline-block;
+  margin-top: var(--espaco-5);
+  min-height: var(--altura-alvo-toque);
+  padding: var(--espaco-3) var(--espaco-5);
+  background-color: var(--cor-acento);
+  color: #fff;
+  border-radius: var(--raio-m);
+  text-decoration: none;
+}
+
+.botao:hover {
+  background-color: var(--cor-acento-hover);
+}
