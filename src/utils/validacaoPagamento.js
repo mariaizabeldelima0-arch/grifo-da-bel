@@ -4,7 +4,8 @@ export const esquemaPagamento = z.object({
   titular: z
     .string()
     .trim()
-    .min(3, 'Informe o nome do titular como está no cartão.'),
+    .min(3, 'Informe o nome do titular como está no cartão.')
+    .regex(/^[A-Za-zÀ-ÿ\s.'-]+$/, 'O titular deve conter apenas letras.'),
 
   cartao: z
     .string()
